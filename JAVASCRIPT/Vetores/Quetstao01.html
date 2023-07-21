@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questao 01</title>
+</head>
+<body>
+    <script>
+        let alunos = []
+        let notas = []
+        let soma = 0
+        let media = 0
+
+        for (let i=0; i<5; i++){
+            alunos[i] = prompt('Digite o nome do aluno: '+ (i+1))
+            notas[i] = Number(prompt('Digite a nota do aluno: '+(i+1)))
+            soma += notas[i]
+        }
+
+        media = soma / 5
+
+        for(let i=0; i<5; i++){
+            alert("NOME: " + alunos[i] + " NOTA: " + notas[i])            
+        }
+        alert("Media dos alunos: " + media)
+    </script>
+</body>
+</html>
